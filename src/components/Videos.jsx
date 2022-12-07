@@ -7,11 +7,13 @@ const Videos = ({videos}) => {
       {videos.map((item, idx) => (
         <Box key={idx}>
           {item.id.videoId && <VideoCard video={item} />}
-          {/* {item.id.channelId && <ChannelCard channelDetail={item} />} */}
+          {item.id.channelId && <ChannelCard channelDetail={item} />}
         </Box>
       ))}
     </Stack>
   )
 }
+
+// "https://pbs.twimg.com/profile_images/1534280478991302656/8j4QlZum_400x400.jpg"
 
 export default Videos
